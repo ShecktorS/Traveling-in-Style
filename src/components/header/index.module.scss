@@ -1,0 +1,9 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.Header {
+  @include flex-container(row);
+  gap: 5px;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.FooterListType {
+  li {
+    list-style-type: none;
+  }
+}

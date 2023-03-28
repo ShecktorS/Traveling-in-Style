@@ -1,0 +1,24 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.Footer {
+  &__content {
+    @include flex-container(column);
+    gap: 30px;
+
+    .firstSection {
+      @include flex-container(row);
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    .secondSection {
+      @include flex-container;
+      justify-content: space-evenly;
+    }
+  }
+}
