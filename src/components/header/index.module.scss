@@ -6,4 +6,38 @@
   gap: 5px;
   justify-content: space-around;
   align-items: center;
+  height: 80px;
+  background-color: $primary;
+  color: $other;
+  border-bottom: 1px solid $secondary;
+
+  input {
+    @include radius-type(rgba(255, 255, 255, 0.308));
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 250px;
+
+    &::placeholder {
+      color: $other;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    @include radius-type;
+    border: $other solid 1px;
+    width: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $active;
+      border: solid 1px $active;
+    }
+  }
 }

@@ -2,3 +2,9 @@
   display: flex;
   flex-direction: $direction;
 }
+
+@mixin radius-type($background: transparent) {
+  border-radius: 30px;
+  background-color: $background;
+  color: $other;
+}

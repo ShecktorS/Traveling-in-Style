@@ -3,6 +3,12 @@
 
 .Navbar {
   @include flex-container(row);
-  gap: 10px;
+  gap: 30px;
   list-style-type: none;
+
+  li {
+    a {
+      text-decoration-line: none;
+    }
+  }
 }
