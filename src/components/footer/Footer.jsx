@@ -1,5 +1,8 @@
 import styles from "./index.module.scss";
 import FooterListType from "../footerListType";
+import { CiFacebook } from "react-icons/ci";
+import { FaTwitter } from "react-icons/fa";
+import { SiPinterest } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -31,9 +34,9 @@ const Footer = () => {
             ]}
           />
           <div className={styles.socials}>
-            <img src="" alt=""></img>
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <CiFacebook className={styles.facebook} />
+            <FaTwitter className={styles.twitter} />
+            <SiPinterest className={styles.pinterest} />
           </div>
         </div>
         <hr /> {/* or div */}

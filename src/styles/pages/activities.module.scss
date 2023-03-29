@@ -9,7 +9,7 @@
 
   .list {
     box-sizing: border-box;
-    background-color: $black;
+    background-color: $primary;
     padding: 30px;
     width: 70vw;
     height: 500px;
@@ -19,5 +19,6 @@
     gap: 10px;
     flex-wrap: wrap;
     overflow: scroll;
+    overflow-x: hidden;
   }
 }

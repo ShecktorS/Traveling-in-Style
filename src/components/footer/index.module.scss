@@ -43,5 +43,23 @@
       @include flex-container;
       justify-content: space-evenly;
     }
+
+    .socials {
+      align-self: center;
+      display: flex;
+      gap: 10px;
+
+      .twitter {
+        box-sizing: border-box;
+        padding: 1px;
+      }
+
+      & > * {
+        color: $primary;
+        font-size: 1.4em;
+        background-color: $other;
+        border-radius: 50%;
+      }
+    }
   }
 }
