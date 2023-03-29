@@ -20,7 +20,7 @@ const Activities = () => {
       </h3>
       <div className={styles.list}>
         {listCard.map((item) => (
-          <ActivityCard item={item} key={item.id} />
+          <ActivityCard item={item} key={item.uuid} />
         ))}
       </div>
     </div>

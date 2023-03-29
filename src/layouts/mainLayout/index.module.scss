@@ -3,7 +3,10 @@
 
 .MainLayout {
   .content {
-    height: 100vh;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
   }
 }

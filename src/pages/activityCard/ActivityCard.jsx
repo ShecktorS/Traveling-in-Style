@@ -1,14 +1,18 @@
 import styles from "./index.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const ActivityCard = ({ item }) => {
-  const { title, cover_image_url, url, desrciption } = item;
+  const { title, uuid, cover_image_url, url, description } = item;
+  const navigate = useNavigate();
+
+  const onHandleClick = () => navigate(`${uuid}`);
 
   return (
-    <div className={styles.ActivityCard}>
-      <img src={cover_image_url} alt="" />
+    <div onClick={onHandleClick} className={styles.ActivityCard}>
+      <img src={cover_image_url} alt={title} />
       <div className={styles.text}>
         <h3>{title}</h3>
-        <p>{desrciption}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

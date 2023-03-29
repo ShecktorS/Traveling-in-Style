@@ -11,6 +11,7 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Activities from "./pages/Activities";
+import Activity from "./pages/activities/id";
 import City from "./pages/City";
 import MainLayout from "./layouts/mainLayout";
 import "./index.css";
@@ -22,7 +23,7 @@ const router = createBrowserRouter(
     <Route element={<MainLayout />}>
       <Route path="/" element={<Home />} />
       <Route path="activities" element={<Activities />} />
-      <Route path="activities/:id" element={<h1>pippo</h1>} />
+      <Route path="activities/:id" element={<Activity />} />
       <Route path="city/:id" element={<City />} />
       <Route path="about" element={<About />} />
     </Route>

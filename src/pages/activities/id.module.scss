@@ -1,0 +1,13 @@
+@import "../../styles/utils/variables";
+.Activity {
+  height: 80vh;
+  width: 80vw;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0 5px $primary-alpha;
+}
