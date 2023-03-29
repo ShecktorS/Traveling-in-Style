@@ -4,7 +4,12 @@ import FooterListType from "../footerListType";
 const Footer = () => {
   return (
     <div className={styles.Footer}>
-      <div className={styles.Footer__background}></div>
+      <div className={styles.Footer__background}>
+        <img
+          src="../../public/assets/images/footer_background.jpg"
+          alt="footer_image"
+        />
+      </div>
       <div className={styles.Footer__content}>
         <div className={styles.firstSection}>
           <h3>LOGO</h3>
