@@ -5,23 +5,24 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
-  Link,
   createRoutesFromElements,
 } from "react-router-dom";
 
-import Home from "./Home";
+import Home from "./pages/Home";
 import About from "./pages/About";
-import Activity from "./pages/Activity";
+import Activities from "./pages/Activities";
 import City from "./pages/City";
+import MainLayout from "./layouts/mainLayout";
 import "./index.css";
 
 //--------------------------------------------------------//
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <Route element={<MainLayout />}>
       <Route path="/" element={<Home />} />
-      <Route path="activity/:id" element={<Activity />} />
+      <Route path="activities" element={<Activities />} />
+      <Route path="activities/:id" element={<h1>pippo</h1>} />
       <Route path="city/:id" element={<City />} />
       <Route path="about" element={<About />} />
     </Route>

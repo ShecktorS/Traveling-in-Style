@@ -1,0 +1,23 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.Activities {
+  color: $primary;
+  @include flex-container(column);
+  justify-content: center;
+  align-items: center;
+
+  .list {
+    box-sizing: border-box;
+    background-color: $black;
+    padding: 30px;
+    width: 70vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: scroll;
+  }
+}

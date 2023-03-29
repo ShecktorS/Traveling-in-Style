@@ -1,0 +1,9 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.MainLayout {
+  .content {
+    height: 100vh;
+    margin: 10px;
+  }
+}
