@@ -1,14 +1,15 @@
 import styles from "../../styles/pages/activities.module.scss";
 import ActivityCard from "../activityCard/ActivityCard";
 import { useState, useEffect } from "react";
+import { activitiesData } from "../../mocks/musement";
 
 const Activities = () => {
   const [listCard, setListCard] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.musement.com/api/v3/activities.json")
-      .then((res) => res.json())
-      .then(({ data }) => setListCard(data));
+    fetch() //"https://api.musement.com/api/v3/activities.json"
+      // .then((res) => res.json())
+      .then(setListCard(activitiesData));
   }, []);
 
   return (

@@ -17,18 +17,56 @@
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.329);
 
+  h1 {
+    width: 50%;
+  }
+
   p {
-    font-weight: 600;
+    font-weight: 300;
+    width: 48%;
   }
 
   img {
     height: 400px;
-    width: 700px;
+    width: 50%;
     object-fit: cover;
     position: absolute;
     right: -100px;
     z-index: -1;
     border-radius: 50%;
     box-shadow: 0 0 4px $primary-alpha;
+  }
+
+  .cat {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: $active;
+    border: 5px solid $other;
+    border-radius: 20px;
+    z-index: 2;
+    overflow: hidden;
+    cursor: default;
+
+    &::after {
+      content: "";
+      height: 200px;
+      width: 200px;
+      display: block;
+      background-color: rgba(255, 255, 255, 0.342);
+      position: absolute;
+      top: -10px;
+      right: -85px;
+      transform: rotate(55deg);
+      z-index: 1;
+      transition: all 0.4s ease;
+    }
+
+    &:hover::after {
+      transform: rotate(50deg);
+      right: -180px;
+    }
   }
 }

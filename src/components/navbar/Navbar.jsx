@@ -8,9 +8,6 @@ const Navbar = () => {
         <Link to="activities">Activities</Link>
       </li>
       <li>
-        <Link to="city/:id">Cities</Link>
-      </li>
-      <li>
         <Link to="about">About</Link>
       </li>
       <li>
