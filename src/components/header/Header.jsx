@@ -24,7 +24,7 @@ const Header = () => {
           type="text"
           name="search"
           id="search"
-          placeholder="Search..."
+          placeholder="Spain, france, italy"
           value={searchedValue}
           onChange={onHandleChange}
           required
